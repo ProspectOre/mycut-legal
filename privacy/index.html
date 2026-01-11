@@ -59,7 +59,8 @@
     <h2>Summary</h2>
     <ul>
         <li>Your deal and commission data stays on your device and your private iCloud account</li>
-        <li>We collect anonymous analytics to improve the app</li>
+        <li>We collect anonymous analytics via TelemetryDeck and Firebase Analytics to improve the app</li>
+        <li>We use Firebase Crashlytics to detect and fix crashes</li>
         <li>We show ads supported by Google AdMob</li>
         <li>We do not sell your personal information</li>
     </ul>
@@ -103,14 +104,29 @@
     </ul>
     <p>TelemetryDeck is privacy-focused and GDPR compliant. Learn more: <a href="https://telemetrydeck.com/privacy/">telemetrydeck.com/privacy</a></p>
 
-    <h2>4. Crash Reporting (Firebase Crashlytics)</h2>
-    <p>We use Firebase Crashlytics to detect and fix app crashes. When a crash occurs, we receive:</p>
+    <h2>4. Firebase (Analytics & Crashlytics)</h2>
+    <p>We use Firebase Analytics and Firebase Crashlytics to understand app usage and fix crashes.</p>
+
+    <h3>Firebase Analytics collects:</h3>
     <ul>
+        <li>App opens and feature usage events</li>
         <li>Device model and iOS version</li>
-        <li>Crash stack traces (technical debugging information)</li>
-        <li>App state at time of crash</li>
+        <li>General usage patterns (screens viewed, buttons tapped)</li>
+        <li>Anonymous user engagement metrics</li>
     </ul>
-    <p>Crashlytics does not collect your personal data or deal information. Learn more: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+
+    <h3>Firebase Crashlytics collects:</h3>
+    <ul>
+        <li>Crash stack traces (technical debugging information)</li>
+        <li>Device state at time of crash</li>
+    </ul>
+
+    <h3>Firebase does NOT collect:</h3>
+    <ul>
+        <li>Your deal amounts, vehicle details, or customer names</li>
+        <li>Personal identifying information</li>
+    </ul>
+    <p>Learn more: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
 
     <h2>5. Advertising (Google AdMob)</h2>
     <p>MyCut displays ads provided by Google AdMob. Google may collect:</p>
